@@ -19,4 +19,14 @@ main(){
 
   print(total2);
 
+  // ------------------------------------------------------------- //
+  // Concatenação de texto
+
+  var text1 = "Douglas ";
+  var text2 = "Marins";
+
+  var conc = text1 + text2;
+
+  print(conc);
+
 }
