@@ -29,4 +29,19 @@ main(){
 
   print(conc);
 
+  // ------------------------------------------------------------- //
+  // Estrutura de decisão
+
+  num1 = 8;
+  num2 = 9;
+
+  if(num1 > num2) {
+    print("Verdadeiro");
+
+  }
+  else{
+    print("False");
+
+  }
+
 }
