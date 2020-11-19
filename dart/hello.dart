@@ -1,3 +1,5 @@
+import 'dart:io';
+
 main(){
 
   // ------------------------------------------------------------- //
@@ -13,7 +15,7 @@ main(){
 
   var num1 = 5;
   var num2 = 3;
-  var total = num1 * num2 ;
+  // var total = num1 * num2 ;
 
   var total2 = (num1 + num2) + (num1 / num2);
 
@@ -44,4 +46,19 @@ main(){
 
   }
 
+  // ------------------------------------------------------------- //
+  // Input
+
+  print("Qual sua idade?");
+
+  var idade = int.parse(stdin.readLineSync()); // Convert Stdin (str) em int
+
+  if(idade >= 18){
+    print("É maior de idade");
+    
+  }
+  else {
+    print("É menor de idade");
+
+  }
 }
