@@ -53,12 +53,20 @@ main(){
 
   var idade = int.parse(stdin.readLineSync()); // Convert Stdin (str) em int
 
-  if(idade >= 18){
-    print("É maior de idade");
-    
+  if(idade >= 50){
+    print("Idoso");
   }
-  else {
-    print("É menor de idade");
 
+  else if(idade >= 18){
+    print("Adulto");
   }
+
+  else if(idade >= 12){
+    print("Adolescente");
+  }
+
+  else{
+    print("Criança");
+  }
+
 }
