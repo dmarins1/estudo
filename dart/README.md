@@ -1,6 +1,13 @@
-# Estudo
-Repositório educacional 
+# Estudo Dart
+Repositório de estudos de dart
 
+# Autor
+
+* **Douglas Marins** - *Desenvolvedor Jr - Estudante*;
+
+## Requisitos
+
+* Dart SDK version: 2.10.4
 
 ## Instalando Dart:
 
@@ -24,3 +31,7 @@ choco install dart-sdk
 choco upgrade dart-sdk
 
 ```
+
+## Ferramentas Utilizadas
+
+* [Visual Studio Code](https://code.visualstudio.com/)
