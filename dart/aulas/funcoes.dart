@@ -1,13 +1,11 @@
 import 'dart:io';
 
 main(){
-
 pegaDadosImc();
-
 }
 
+// Função responsável por pegar os dados do usuário para cálculo do IMC
 pegaDadosImc(){
-
   print("Informe seu peso: ");
   int peso = int.parse(stdin.readLineSync());
   
@@ -19,17 +17,15 @@ pegaDadosImc(){
   print("Seu calculo IMC: " + calc.toString());
 
   imprimirResultado(calc);
- 
 }
 
+// Função que calcula e retorna IMC
 double calculo(int peso, double altura){
-
   return peso / (altura * altura);
-
 }
 
+// Função que imprime o resultado baseado no IMC passado
 imprimirResultado(double imc){
-
  if(imc <= 18.5){
     print("Abaixo do Peso");
   }
@@ -53,5 +49,4 @@ imprimirResultado(double imc){
   else{
     print("Obesidade Grau 3");
   }
-
 }
