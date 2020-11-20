@@ -14,12 +14,12 @@ calculoIMC();
 calculoIMC(){
 
   print("Informe seu peso: ");
-  var peso = int.parse(stdin.readLineSync());
+  int peso = int.parse(stdin.readLineSync());
   
   print("Informe sua altura: ");
-  var altura = double.parse(stdin.readLineSync());
+  double altura = double.parse(stdin.readLineSync());
 
-  var resultado_imc = peso / (altura * altura);
+  double resultado_imc = peso / (altura * altura);
 
   print("Calculo do IMC: " + resultado_imc.toString());
 
@@ -27,7 +27,7 @@ calculoIMC(){
  
 }
 
-imprimirResultado(resultado){
+imprimirResultado(double resultado){
 
  if(resultado <= 18.5){
     print("Abaixo do Peso");
