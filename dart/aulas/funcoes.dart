@@ -19,27 +19,33 @@ calculoIMC(){
   print("Informe sua altura: ");
   var altura = double.parse(stdin.readLineSync());
 
-  var calculo = peso / (altura * altura);
+  var resultado_imc = peso / (altura * altura);
 
-  print("Calculo do IMC: " + calculo.toString());
+  print("Calculo do IMC: " + resultado_imc.toString());
 
-  if(calculo <= 18.5){
+  imprimirResultado(resultado_imc);
+ 
+}
+
+imprimirResultado(resultado){
+
+ if(resultado <= 18.5){
     print("Abaixo do Peso");
   }
 
-  else if (calculo <= 24.9){
+  else if (resultado <= 24.9){
     print("Peso normal");
   }
 
-  else if (calculo <= 29.9){
+  else if (resultado <= 29.9){
     print("Sobrepeso");
   }
 
-  else if (calculo <= 34.9){
+  else if (resultado <= 34.9){
     print("Obesidade Grau 1");
   } 
 
-  else if (calculo <= 39.9){
+  else if (resultado <= 39.9){
     print("Obresidade Grau 2");
   }
   
