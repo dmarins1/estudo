@@ -24,4 +24,7 @@ main(){
 
   }
 
+  //array.leghth - para pegar o tramanho do array
+  print("Existem " +  text.length.toString() + " dados no array");
+
 }
