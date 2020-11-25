@@ -2,7 +2,9 @@ import 'dart:io';
 
 main(){
 
-  var text = ["Douglas Marins", "Paloma Marins", "Thaianne Faria", "Raoni Faria"];
+  List <String> text = ["Douglas Marins", "Paloma Marins", "Thaianne Faria", "Raoni Faria"];
+  List <int> numeros = [12, 24, 36, 88];
+  List <double> flutuantes = [12.00, 15.20, 8.3];
 
   // bool condicao = true;
   
