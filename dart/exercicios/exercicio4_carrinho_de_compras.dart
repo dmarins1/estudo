@@ -21,11 +21,25 @@ main(){
         limpaTerminal();
 
         for (var i = 0; i < produtos.length; i++) {
-          int posicao = i + 1;
-          print("Item $posicao - ${produtos[i]}");
+          print("Item $i - ${produtos[i]}");
         }
-        
+
         print('\n');
+
+      }
+
+      else if(text == 'remover'){
+        print("Qual produto deseja remover?\n");
+
+        for (var i = 0; i < produtos.length; i++) {
+          print("Item $i - ${produtos[i]}");
+        }
+        print("\n");
+
+        int item = int.parse(stdin.readLineSync());
+
+        print("\nVocê removeu o item $item - ${produtos[item]} \n");
+        produtos.removeAt(item);
 
       }
 
