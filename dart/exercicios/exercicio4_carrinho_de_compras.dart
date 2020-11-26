@@ -6,6 +6,9 @@ main(){
     bool condicao = true;
 
     while(condicao){
+
+      
+
       print("ADICIONE O PRODUTO");
       String text = stdin.readLineSync();
 
@@ -15,16 +18,26 @@ main(){
       }
 
       else if(text == 'imprimir'){
-        print(produtos);
+        limpaTerminal();
+
+        for (var i = 0; i < produtos.length; i++) {
+          int posicao = i + 1;
+          print("Item $posicao - ${produtos[i]}");
+        }
+        
         print('\n');
+
       }
 
       else{
         produtos.add(text);
+        limpaTerminal();
       }
     
     }
 
-    
+}
 
+limpaTerminal(){
+  print("\x1B[2J\x1B[0;0H");
 }
