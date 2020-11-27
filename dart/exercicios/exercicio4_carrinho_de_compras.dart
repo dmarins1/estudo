@@ -1,13 +1,13 @@
 import 'dart:io';
 
+
+List <String> produtos = [];
+
 main(){
 
-    List <String> produtos = [];
     bool condicao = true;
 
     while(condicao){
-
-      
 
       print("ADICIONE O PRODUTO");
       String text = stdin.readLineSync();
@@ -20,36 +20,40 @@ main(){
       else if(text == 'imprimir'){
         limpaTerminal();
 
-        for (var i = 0; i < produtos.length; i++) {
-          print("Item $i - ${produtos[i]}");
-        }
+        imprimir();
 
         print('\n');
-
       }
 
       else if(text == 'remover'){
-        print("Qual produto deseja remover?\n");
-
-        for (var i = 0; i < produtos.length; i++) {
-          print("Item $i - ${produtos[i]}");
-        }
-        print("\n");
-
-        int item = int.parse(stdin.readLineSync());
-
-        print("\nVocê removeu o item $item - ${produtos[item]} \n");
-        produtos.removeAt(item);
-
+        remover();
       }
 
       else{
         produtos.add(text);
         limpaTerminal();
       }
-    
     }
 
+}
+
+imprimir(){
+  for (var i = 0; i < produtos.length; i++) {
+    print("Item $i - ${produtos[i]}");
+  }
+}
+
+remover(){
+  print("Qual produto deseja remover?\n");
+
+  imprimir();
+
+  print("\n");
+
+  int item = int.parse(stdin.readLineSync());
+
+  print("\nVocê removeu o item $item - ${produtos[item]} \n");
+  produtos.removeAt(item);
 }
 
 limpaTerminal(){
