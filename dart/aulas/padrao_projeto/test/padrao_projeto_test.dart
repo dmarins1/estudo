@@ -1,4 +1,4 @@
-import 'package:padrao_projeto/padrao_projeto.dart';
+import 'package:padrao_projeto/calculo.dart';
 import 'package:test/test.dart';
 
 void main() {
