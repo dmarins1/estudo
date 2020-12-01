@@ -9,7 +9,7 @@ Repositório de estudos de dart
 
 * Dart SDK version: 2.10.4
 
-## Instalando Dart:
+## Instalando Dart - Windows:
 
 Abra o powershell como administrador.
 
@@ -29,6 +29,27 @@ choco install dart-sdk
 
 ```
 choco upgrade dart-sdk
+
+```
+
+
+## Instalando Dart - Linux:
+
+1. Abra o terminal de comando e execute a configuração única:
+
+```
+sudo apt-get update
+sudo apt-get install apt-transport-https
+sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+
+```
+
+2. Então instale o Dart SDK
+
+```
+sudo apt-get update
+sudo apt-get install dart
 
 ```
 
