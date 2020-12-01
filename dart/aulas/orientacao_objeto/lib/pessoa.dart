@@ -1,4 +1,6 @@
-class Pessoa {
+import 'humano.dart';
+
+class Pessoa extends Humano {
   String nome;
   int idade;
   String sexo;
