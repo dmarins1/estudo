@@ -16,9 +16,9 @@ void main(List<String> arguments) {
   print('informe seu peso: ');
   pessoa.peso = double.parse(stdin.readLineSync());
 
-  print(
-      'A pessoa ${pessoa.nome} tem ${pessoa.idade}, pesa ${pessoa.peso} Kg e mede ${pessoa.altura} de altura.');
+  String text = '\nNome: ${pessoa.nome} \nIdade: ${pessoa.idade}'
+      '\nPeso: ${pessoa.peso} \nAltura: ${pessoa.altura}'
+      '\nImc: ${pessoa.imc()} \nMaior de Idade: ${pessoa.maiorDeIdade()}';
 
-  print(
-      'Imc: ${pessoa.imc()}           Maior de Idade: ${pessoa.maiorDeIdade()}');
+  print(text);
 }
