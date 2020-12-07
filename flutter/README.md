@@ -9,6 +9,7 @@ Repositório de estudos de flutter
 
 * Dart: 2.10.4 ou Superior
 * Flutter: 1.22.4 ou Superior
+* Android Studio 30.0.2
 
 
 ## Instalando Flutter:
