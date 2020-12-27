@@ -47,9 +47,19 @@ class ListaScreenState extends State<ListaScreen>{
       children: [
         
         IconButton(
-          icon: new Icon(Icons.check_box, color: Colors.green,),
-          iconSize: 48.0,
-          onPressed: () {},
+          
+          icon: new Icon(item.concluido ? Icons.check_box : 
+            Icons.check_box_outline_blank,
+            size: 42.0, 
+            color: Colors.green,
+          ),
+          
+          padding: EdgeInsets.only(left: 10.0, right: 30.0),
+          onPressed: () {
+            setState(() {
+              item.concluido = true;
+            });
+          },
         ),
         
         new Column(
